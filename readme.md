@@ -10,7 +10,7 @@ modsqual also provides multiple representations of MODS elements to best suit th
 
 Install via pip on the command line:
 ```
-pip install modsqual
+pip install git+https://github.com/katger4/modsqual
 ```
 
 ## Usage
