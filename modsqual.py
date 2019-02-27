@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 from lxml import etree, objectify
 from collections import Counter, defaultdict
@@ -395,20 +395,20 @@ class Mods(object):
     
 if __name__ == '__main__':
     mods1 = Mods(sample1)
-    print mods1.wf
+    print(mods1.wf)
     if mods1.wf:
-        print mods1.counts
+        print(mods1.counts)
         for a in modstoplevels:
             element = getattr(mods1, a)
-            print element.name + ': ' + str(element.exists)
+            print(element.name + ': ' + str(element.exists))
         for t in mods1.toplevels:
             element = getattr(mods1, t)
-            print 'NAME: ' + element.name
-            print 'COUNT: ' + str(element.count)
-            print 'TAG: ' + element.tag
-            print 'XML:'
-            print element.xml()
-            print 'DICT:'
-            print element.dict
-            print 'TEXT:'
-            print element.text()
+            print('NAME: ' + element.name)
+            print('COUNT: ' + str(element.count))
+            print('TAG: ' + element.tag)
+            print('XML:')
+            print(element.xml())
+            print('DICT:')
+            print(element.dict)
+            print('TEXT:')
+            print(element.text())
